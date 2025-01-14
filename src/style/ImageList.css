@@ -1,0 +1,58 @@
+/* src/style/ImageList.css */
+
+.image-list {
+    display: flex;
+    margin-left: -15px; /* Khoảng cách cột giữa các cột */
+    width: auto;
+}
+
+.image-list_column {
+    padding-left: 15px; /* Khoảng cách cột cho mỗi cột */
+    background-clip: padding-box;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 15px; /* Khoảng cách giữa các ảnh theo chiều dọc */
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .image {
+    transform: scale(1.1);
+}
+
+.author-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+.image-container:hover .author-overlay {
+    opacity: 1;
+}
+
+.end-of-list {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    padding: 20px;
+}

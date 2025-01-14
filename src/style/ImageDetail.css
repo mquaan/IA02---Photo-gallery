@@ -1,0 +1,51 @@
+.image-detail-container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
+}
+
+.image-detail-image {
+    max-height: 400px;
+    border-radius: 8px;
+}
+
+.image-detail-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.image-detail-author,
+.image-detail-description {
+    font-size: 16px;
+    margin: 5px 0;
+}
